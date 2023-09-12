@@ -1,0 +1,402 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&family=Poppins:wght@300;500&family=Quicksand&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --darkblue: #030712;
+  --white: hsl(0, 0%, 100%);
+  --lightblue: #374151;
+  --green: #14a800;
+  --blue: hsl(240, 96%, 46%);
+  --gray: #202225;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  color: var(--white);
+  font-family: "Quicksand", sans-serif;
+  background-color: var(--darkblue);
+}
+
+/* NavBar Styling */
+.nav-container {
+  color: var(--darkgray);
+  padding: 2rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo h3 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+}
+
+.menu li {
+  margin-right: 30px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: var(--darkgray);
+  font-size: 20px;
+}
+
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger-menu .bar {
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+  background-color: #333;
+  transition: all 0.3s ease-in-out;
+  display: block;
+}
+
+button {
+  background-color: var(--white);
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Style the hero container */
+.hero-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  align-items: center;
+}
+
+.image img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Styling for About Me Container */
+.about-container {
+  background-color: var(--gray);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  /* max-width: 1200px; */
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.my-picture img {
+  max-width: 100%;
+  height: auto;
+}
+
+.about-text {
+  flex: 1;
+  padding: 20px;
+}
+
+.about-text h3 {
+  font-size: 24px;
+  margin-bottom: 2rem;
+}
+
+/* Style the brands container */
+.brands-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 20px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.brands {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.brands-info {
+  flex: 1;
+  max-width: 200px;
+  margin: 10px;
+  text-align: center;
+}
+
+.brands-info img {
+  max-width: 100%;
+  height: auto;
+}
+
+.demo {
+  margin-top: 3.5rem;
+}
+
+/*  experience container styling */
+.experience-container {
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  background-color: var(--gray);
+}
+
+.heading {
+  margin: 2rem 0;
+}
+
+.heading h5 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.experience-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  width: 900px;
+  margin: 10px;
+  padding: 20px;
+  display: flex;
+  border: 1px solid #ddd;
+  text-align: center;
+  border-radius: .5rem;
+  background-color: var(--lightblue);
+}
+
+.card h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  text-align: left;
+  color: var(--green);
+}
+
+.card p {
+  font-weight: bold;
+  font-size: 1rem;
+  margin-top: 10px;
+  text-align: right;
+}
+
+.card ul {
+  margin-top: 1.5rem;
+}
+
+.role h5 {
+  font-size: 18px;
+}
+
+/* Style the footer container */
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.footer-info {
+  flex: 1;
+  max-width: 400px;
+  margin: auto;
+}
+
+.top h5 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.top p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.contact {
+  flex: 1;
+  margin: 0 10px;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.contact h2 span {
+  margin-right: .5rem;
+}
+
+.social-icon {
+  flex: 1;
+  margin: 0 10px;
+  text-align: center;
+}
+
+.social-icon p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.icon span {
+  margin: 0 10px;
+  font-size: 1.5rem;
+}
+
+.copyright {
+  flex: 1;
+  margin: 10px;
+  text-align: center;
+}
+
+.copyright a {
+  text-decoration: none;
+  color: var(--white);
+  font-weight: bold;
+}
+
+
+/* Add responsive styles for smaller screens */
+@media (max-width: 768px) {
+  .menu ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .menu li {
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+
+  .menu {
+    display: none;
+    margin: auto;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background-color: var(--darkblue);
+    z-index: 1;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .menu.show {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menu-links {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hamburger-menu {
+    display: block;
+    z-index: 100;
+  }
+
+  .hamburger-menu.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger-menu.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger-menu.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .hero-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .info {
+    order: 2;
+  }
+
+  .image {
+    order: 1;
+    margin-bottom: 20px;
+  }
+
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .my-picture {
+    margin-bottom: 20px;
+  }
+
+  .brands-info {
+    flex-basis: calc(50% - 20px); 
+}
+
+.experience-card {
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  width: 100%;
+}
+
+.card p, .card h4, .role h5s {
+ font-size: 1rem;
+}
+
+.footer-container {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.top, .contact, .social-icon, .copyright {
+  flex: 1 1 100%;
+  margin: 10px 0;
+}
+}
+
+@media screen and (max-width: 600px) {
+  .info {
+    margin: 2rem 0;
+  }
+}
