@@ -12,7 +12,7 @@
   --lightblue: #374151;
   --green: #14a800;
   --blue: hsl(240, 96%, 46%);
-  --gray: #202225;
+  --gray: #111827;
 }
 
 a {
@@ -23,6 +23,10 @@ body {
   color: var(--white);
   font-family: "Quicksand", sans-serif;
   background-color: var(--darkblue);
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 /* NavBar Styling */
@@ -190,7 +194,8 @@ h3 {
   margin: 10px;
   padding: 20px;
   display: flex;
-  border: 1px solid #ddd;
+  flex-direction: row;
+  border: none;
   text-align: center;
   border-radius: .5rem;
   background-color: var(--lightblue);
@@ -199,7 +204,7 @@ h3 {
 .card h4 {
   font-size: 1.2rem;
   margin-bottom: 10px;
-  text-align: left;
+  /* text-align: left; */
   color: var(--green);
 }
 
@@ -207,7 +212,7 @@ h3 {
   font-weight: bold;
   font-size: 1rem;
   margin-top: 10px;
-  text-align: right;
+  /* text-align: right; */
 }
 
 .card ul {
@@ -259,6 +264,10 @@ h3 {
 
 .contact h2 span {
   margin-right: .5rem;
+}
+
+.contact h2 a {
+  color: var(--white);
 }
 
 .social-icon {
@@ -379,8 +388,13 @@ h3 {
   width: 100%;
 }
 
-.card p, .card h4, .role h5s {
+.card p, .card h4, .role h5 {
  font-size: 1rem;
+}
+
+.card p {
+  margin-top: 0;
+  font-size: .9rem;
 }
 
 .footer-container {
@@ -399,4 +413,18 @@ h3 {
   .info {
     margin: 2rem 0;
   }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card h6 {
+    display: flex;
+  }
+
+  .card p {
+    display: none;
+  }
+  
 }
